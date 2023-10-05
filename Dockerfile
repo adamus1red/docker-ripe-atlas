@@ -41,7 +41,7 @@ LABEL image="ripe-atlas-artifacts"
 COPY --from=builder /root/atlasswprobe-*.deb /
 
 ## the actual image
-FROM debian:10-slim
+FROM debian:12-slim
 LABEL maintainer="dockerhub@public.swineson.me"
 LABEL image="ripe-atlas"
 ARG DEBIAN_FRONTEND=noninteractive
